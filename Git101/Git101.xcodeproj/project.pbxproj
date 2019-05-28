@@ -56,9 +56,9 @@
 		E39836CC229CBB8F00E92985 /* Git101 */ = {
 			isa = PBXGroup;
 			children = (
+				E39836E3229CC03000E92985 /* AppStart */,
+				E39836E2229CC02200E92985 /* ViewController */,
 				E39836DF229CBBA400E92985 /* Model */,
-				E39836CD229CBB8F00E92985 /* AppDelegate.swift */,
-				E39836CF229CBB8F00E92985 /* ViewController.swift */,
 				E39836D1229CBB8F00E92985 /* Main.storyboard */,
 				E39836D4229CBB9200E92985 /* Assets.xcassets */,
 				E39836D6229CBB9200E92985 /* LaunchScreen.storyboard */,
@@ -73,6 +73,22 @@
 				E39836E0229CBBB400E92985 /* Plant.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E39836E2229CC02200E92985 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E39836CF229CBB8F00E92985 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E39836E3229CC03000E92985 /* AppStart */ = {
+			isa = PBXGroup;
+			children = (
+				E39836CD229CBB8F00E92985 /* AppDelegate.swift */,
+			);
+			path = AppStart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

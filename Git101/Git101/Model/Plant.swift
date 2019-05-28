@@ -12,20 +12,29 @@ class Plant {
 
     var name: String
     var species: Species
+    var cost: Float
 
-
-    init(name: String, species: Species) {
+    init(name: String, species: Species, cost: Float) {
         self.name = name
         self.species = species
+        self.cost = cost
     }
 
 }
 
 extension Plant{
 
-    static let sunflower: Plant = Plant(name: "Sunflower", species: Species.daora)
+    static let sunflower: Plant = Plant(name: "Sunflower",
+                                        species: Species.daora,
+                                        cost: 5.0)
 
-    static let rosa: Plant = Plant(name: "Rose", species: Species.bonita)
+    static let cactus: Plant = Plant(name: "Cactus",
+                                     species: Species.daora,
+                                     cost: 10)
+
+    static let rosa: Plant = Plant(name: "Rose",
+                                   species: Species.bonita,
+                                   cost: 8.5)
 
 }
 

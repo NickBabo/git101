@@ -14,12 +14,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var speciesLabel: UILabel!
 
+    @IBOutlet weak var costLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupUI()
     }
 
-    func setupUI() {
+    private func setupUI() {
         nameLabel.text = Plant.sunflower.name
         speciesLabel.text = Plant.sunflower.species.name
     }
