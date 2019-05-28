@@ -18,34 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo2-Qc-8qE" userLabel="name">
-                                <rect key="frame" x="0.0" y="323" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="species" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrp-GO-om2">
-                                <rect key="frame" x="158" y="369" width="59" height="21"/>
+                                <rect key="frame" x="158" y="175" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bex-aN-Ddo" userLabel="cost">
-                                <rect key="frame" x="166.5" y="415" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bex-aN-Ddo" userLabel="cost">
+                                <rect key="frame" x="171" y="586" width="33" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkx-6x-wty">
+                                <rect key="frame" x="0.0" y="20" width="375" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo2-Qc-8qE" userLabel="name">
+                                        <rect key="frame" x="166.5" y="54.5" width="42.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14864701029999999" green="0.52513802050000002" blue="0.59275764230000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uo2-Qc-8qE" firstAttribute="centerY" secondItem="bkx-6x-wty" secondAttribute="centerY" id="UfN-Jv-qgn"/>
+                                    <constraint firstAttribute="height" constant="130" id="dNl-xU-BId"/>
+                                    <constraint firstItem="uo2-Qc-8qE" firstAttribute="centerX" secondItem="bkx-6x-wty" secondAttribute="centerX" id="hDX-X3-5RA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uo2-Qc-8qE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7J2-jl-xWJ"/>
-                            <constraint firstItem="uo2-Qc-8qE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jw0-SY-fii"/>
-                            <constraint firstItem="bex-aN-Ddo" firstAttribute="centerX" secondItem="Vrp-GO-om2" secondAttribute="centerX" id="Ksv-Fu-Nsw"/>
-                            <constraint firstItem="Vrp-GO-om2" firstAttribute="top" secondItem="uo2-Qc-8qE" secondAttribute="bottom" constant="25" id="TQT-HN-h1T"/>
-                            <constraint firstItem="Vrp-GO-om2" firstAttribute="centerX" secondItem="uo2-Qc-8qE" secondAttribute="centerX" id="p7n-j5-l29"/>
-                            <constraint firstItem="uo2-Qc-8qE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r6z-nc-0Na"/>
-                            <constraint firstItem="bex-aN-Ddo" firstAttribute="top" secondItem="Vrp-GO-om2" secondAttribute="bottom" constant="25" id="zpt-VH-hQU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bex-aN-Ddo" secondAttribute="bottom" constant="60" id="3bn-G2-Le4"/>
+                            <constraint firstItem="bkx-6x-wty" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DHr-fQ-wbi"/>
+                            <constraint firstItem="bkx-6x-wty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X6E-im-DeI"/>
+                            <constraint firstItem="bex-aN-Ddo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XJg-Jy-Dtf"/>
+                            <constraint firstItem="Vrp-GO-om2" firstAttribute="top" secondItem="bkx-6x-wty" secondAttribute="bottom" constant="25" id="eEC-Z0-m7P"/>
+                            <constraint firstItem="Vrp-GO-om2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i3O-vM-vtF"/>
+                            <constraint firstItem="bkx-6x-wty" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mIY-Jq-2qd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
