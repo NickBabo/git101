@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     func setupUI() {
         nameLabel.text = Plant.sunflower.name
-        speciesLabel.text = Plant.sunflower.species
+        speciesLabel.text = Plant.sunflower.species.name
     }
 
 }
