@@ -8,21 +8,43 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ViewCode {
 
-    @IBOutlet weak var nameLabel: UILabel!
+    private let nameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
 
-    @IBOutlet weak var speciesLabel: UILabel!
+    private let speciesLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        buildView()
     }
 
-    func setupUI() {
-        nameLabel.text = Plant.sunflower.name
-        speciesLabel.text = Plant.sunflower.species
+    func buildViewHierarchy() {
+        view.addSubview(nameLabel)
+        view.addSubview(speciesLabel)
     }
+
+    func addConstraints() {
+        nameLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        nameLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+
+        speciesLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        speciesLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 25).isActive = true
+    }
+
+    func additionalConfig() {
+        nameLabel.text = Plant.rosa.name
+        speciesLabel.text = Plant.rosa.species
+    }
+
 
 }
 
