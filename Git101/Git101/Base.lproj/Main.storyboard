@@ -30,18 +30,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bex-aN-Ddo" userLabel="cost">
+                                <rect key="frame" x="166.5" y="415" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uo2-Qc-8qE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7J2-jl-xWJ"/>
                             <constraint firstItem="uo2-Qc-8qE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jw0-SY-fii"/>
+                            <constraint firstItem="bex-aN-Ddo" firstAttribute="centerX" secondItem="Vrp-GO-om2" secondAttribute="centerX" id="Ksv-Fu-Nsw"/>
                             <constraint firstItem="Vrp-GO-om2" firstAttribute="top" secondItem="uo2-Qc-8qE" secondAttribute="bottom" constant="25" id="TQT-HN-h1T"/>
                             <constraint firstItem="Vrp-GO-om2" firstAttribute="centerX" secondItem="uo2-Qc-8qE" secondAttribute="centerX" id="p7n-j5-l29"/>
                             <constraint firstItem="uo2-Qc-8qE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r6z-nc-0Na"/>
+                            <constraint firstItem="bex-aN-Ddo" firstAttribute="top" secondItem="Vrp-GO-om2" secondAttribute="bottom" constant="25" id="zpt-VH-hQU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="costLabel" destination="bex-aN-Ddo" id="5Du-AW-o8U"/>
                         <outlet property="nameLabel" destination="uo2-Qc-8qE" id="Hau-Bh-iQc"/>
                         <outlet property="speciesLabel" destination="Vrp-GO-om2" id="TVh-l4-XkP"/>
                     </connections>
